@@ -1,0 +1,88 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background rectangles for each layer -->
+  <rect x="10" y="100" width="120" height="200" fill="#ffcccc" rx="5" ry="5" />
+  <rect x="160" y="100" width="120" height="200" fill="#cce5ff" rx="5" ry="5" />
+  <rect x="310" y="100" width="120" height="200" fill="#d1e7dd" rx="5" ry="5" />
+  <rect x="460" y="100" width="120" height="200" fill="#fff2cc" rx="5" ry="5" />
+  <rect x="610" y="100" width="120" height="200" fill="#e0cffc" rx="5" ry="5" />
+  
+  <!-- Layer Labels -->
+  <text x="70" y="320" text-anchor="middle" font-family="Arial" font-size="14" fill="#d63031" font-weight="bold">Input Layer</text>
+  <text x="70" y="340" text-anchor="middle" font-family="Arial" font-size="14" fill="#d63031">(Image)</text>
+  
+  <text x="220" y="320" text-anchor="middle" font-family="Arial" font-size="14" fill="#0984e3" font-weight="bold">Early Layers</text>
+  <text x="220" y="340" text-anchor="middle" font-family="Arial" font-size="14" fill="#0984e3">(Edges, Colors)</text>
+  
+  <text x="370" y="320" text-anchor="middle" font-family="Arial" font-size="14" fill="#00b894" font-weight="bold">Middle Layers</text>
+  <text x="370" y="340" text-anchor="middle" font-family="Arial" font-size="14" fill="#00b894">(Textures, Patterns)</text>
+  
+  <text x="520" y="320" text-anchor="middle" font-family="Arial" font-size="14" fill="#f39c12" font-weight="bold">Deep Layers</text>
+  <text x="520" y="340" text-anchor="middle" font-family="Arial" font-size="14" fill="#f39c12">(Parts, Eyes, Nose)</text>
+  
+  <text x="670" y="320" text-anchor="middle" font-family="Arial" font-size="14" fill="#8e44ad" font-weight="bold">Output Layer</text>
+  <text x="670" y="340" text-anchor="middle" font-family="Arial" font-size="14" fill="#8e44ad">(Objects, Faces)</text>
+  
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">Deep Neural Network: Increasing Feature Complexity</text>
+  <text x="400" y="75" text-anchor="middle" font-family="Arial" font-size="16">Each layer extracts increasingly complex features from the input</text>
+  
+  <!-- Input Layer - Image representation -->
+  <rect x="40" y="150" width="60" height="60" fill="#ffffff" stroke="#000000" stroke-width="2" />
+  <line x1="40" y1="165" x2="100" y2="165" stroke="#666666" stroke-width="1" />
+  <line x1="40" y1="180" x2="100" y2="180" stroke="#666666" stroke-width="1" />
+  <line x1="40" y1="195" x2="100" y2="195" stroke="#666666" stroke-width="1" />
+  <line x1="55" y1="150" x2="55" y2="210" stroke="#666666" stroke-width="1" />
+  <line x1="70" y1="150" x2="70" y2="210" stroke="#666666" stroke-width="1" />
+  <line x1="85" y1="150" x2="85" y2="210" stroke="#666666" stroke-width="1" />
+  
+  <!-- Early Layers - Edges -->
+  <line x1="185" y1="150" x2="215" y2="180" stroke="#000000" stroke-width="2" />
+  <line x1="185" y1="180" x2="215" y2="150" stroke="#000000" stroke-width="2" />
+  <line x1="185" y1="200" x2="255" y2="200" stroke="#000000" stroke-width="2" />
+  <line x1="220" y1="165" x2="220" y2="235" stroke="#000000" stroke-width="2" />
+  
+  <!-- Middle Layers - Patterns -->
+  <rect x="335" y="150" width="30" height="30" fill="none" stroke="#000000" stroke-width="2" />
+  <rect x="355" y="170" width="30" height="30" fill="none" stroke="#000000" stroke-width="2" />
+  <circle cx="370" cy="200" r="15" fill="none" stroke="#000000" stroke-width="2" />
+  <path d="M335,230 Q355,200 375,230" fill="none" stroke="#000000" stroke-width="2" />
+  
+  <!-- Deep Layers - Parts -->
+  <circle cx="490" cy="160" r="10" fill="none" stroke="#000000" stroke-width="2" />
+  <circle cx="510" cy="160" r="10" fill="none" stroke="#000000" stroke-width="2" />
+  <circle cx="500" cy="190" r="5" fill="none" stroke="#000000" stroke-width="2" />
+  <path d="M480,210 Q500,230 520,210" fill="none" stroke="#000000" stroke-width="2" />
+  <ellipse cx="500" cy="230" rx="30" ry="20" fill="none" stroke="#000000" stroke-width="2" stroke-dasharray="4" />
+  
+  <!-- Output Layer - Face -->
+  <circle cx="670" cy="180" r="40" fill="none" stroke="#000000" stroke-width="2" />
+  <circle cx="655" cy="165" r="5" fill="#000000" />
+  <circle cx="685" cy="165" r="5" fill="#000000" />
+  <path d="M650,195 Q670,215 690,195" fill="none" stroke="#000000" stroke-width="2" />
+  
+  <!-- Arrows connecting layers -->
+  <path d="M110,180 C130,180 140,160 160,160" fill="none" stroke="#666666" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M110,180 C130,180 140,180 160,180" fill="none" stroke="#666666" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M110,180 C130,180 140,200 160,200" fill="none" stroke="#666666" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <path d="M280,180 C290,180 300,160 310,160" fill="none" stroke="#666666" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M280,180 C290,180 300,180 310,180" fill="none" stroke="#666666" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M280,180 C290,180 300,200 310,200" fill="none" stroke="#666666" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <path d="M430,180 C440,180 450,160 460,160" fill="none" stroke="#666666" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M430,180 C440,180 450,180 460,180" fill="none" stroke="#666666" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M430,180 C440,180 450,200 460,200" fill="none" stroke="#666666" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <path d="M580,180 C590,180 600,180 610,180" fill="none" stroke="#666666" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#666666" />
+    </marker>
+  </defs>
+  
+  <!-- Increasing complexity annotation -->
+  <path d="M70,380 L670,380" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrow)" />
+  <text x="370" y="375" text-anchor="middle" font-family="Arial" font-size="16" fill="#333333" font-weight="bold">Increasing Feature Complexity</text>
+</svg>
