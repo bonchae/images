@@ -1,0 +1,157 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8f9fa"/>
+  
+  <!-- Input tokens -->
+  <g id="input-tokens">
+    <rect x="30" y="300" width="50" height="80" fill="#5dade2" stroke="#2980b9" stroke-width="2" rx="5"/>
+    <text x="55" y="320" text-anchor="middle" font-family="Arial" font-size="9" fill="white">our</text>
+    <text x="55" y="335" text-anchor="middle" font-family="Arial" font-size="8" fill="white">Token</text>
+    <text x="55" y="350" text-anchor="middle" font-family="Arial" font-size="8" fill="white">ID: 1</text>
+    
+    <rect x="90" y="300" width="50" height="80" fill="#5dade2" stroke="#2980b9" stroke-width="2" rx="5"/>
+    <text x="115" y="320" text-anchor="middle" font-family="Arial" font-size="8" fill="white">company</text>
+    <text x="115" y="335" text-anchor="middle" font-family="Arial" font-size="8" fill="white">Token</text>
+    <text x="115" y="350" text-anchor="middle" font-family="Arial" font-size="8" fill="white">ID: 2</text>
+    
+    <rect x="150" y="300" width="50" height="80" fill="#5dade2" stroke="#2980b9" stroke-width="2" rx="5"/>
+    <text x="175" y="320" text-anchor="middle" font-family="Arial" font-size="8" fill="white">provides</text>
+    <text x="175" y="335" text-anchor="middle" font-family="Arial" font-size="8" fill="white">Token</text>
+    <text x="175" y="350" text-anchor="middle" font-family="Arial" font-size="8" fill="white">ID: 3</text>
+    
+    <rect x="210" y="300" width="50" height="80" fill="#5dade2" stroke="#2980b9" stroke-width="2" rx="5"/>
+    <text x="235" y="320" text-anchor="middle" font-family="Arial" font-size="8" fill="white">excellent</text>
+    <text x="235" y="335" text-anchor="middle" font-family="Arial" font-size="8" fill="white">Token</text>
+    <text x="235" y="350" text-anchor="middle" font-family="Arial" font-size="8" fill="white">ID: 4</text>
+  </g>
+  
+  <!-- Input text label -->
+  <text x="145" y="395" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold">Input Text: "our company provides excellent"</text>
+  
+  <!-- Token Embeddings -->
+  <g id="embeddings">
+    <rect x="30" y="220" width="50" height="60" fill="#85c1e9" stroke="#2980b9" stroke-width="1" rx="3"/>
+    <text x="55" y="240" text-anchor="middle" font-family="Arial" font-size="8">Token</text>
+    <text x="55" y="255" text-anchor="middle" font-family="Arial" font-size="8">Embed</text>
+    <text x="55" y="270" text-anchor="middle" font-family="Arial" font-size="8">[512d]</text>
+    
+    <rect x="90" y="220" width="50" height="60" fill="#85c1e9" stroke="#2980b9" stroke-width="1" rx="3"/>
+    <text x="115" y="240" text-anchor="middle" font-family="Arial" font-size="8">Token</text>
+    <text x="115" y="255" text-anchor="middle" font-family="Arial" font-size="8">Embed</text>
+    <text x="115" y="270" text-anchor="middle" font-family="Arial" font-size="8">[512d]</text>
+    
+    <rect x="150" y="220" width="50" height="60" fill="#85c1e9" stroke="#2980b9" stroke-width="1" rx="3"/>
+    <text x="175" y="240" text-anchor="middle" font-family="Arial" font-size="8">Token</text>
+    <text x="175" y="255" text-anchor="middle" font-family="Arial" font-size="8">Embed</text>
+    <text x="175" y="270" text-anchor="middle" font-family="Arial" font-size="8">[512d]</text>
+    
+    <rect x="210" y="220" width="50" height="60" fill="#85c1e9" stroke="#2980b9" stroke-width="1" rx="3"/>
+    <text x="235" y="240" text-anchor="middle" font-family="Arial" font-size="8">Token</text>
+    <text x="235" y="255" text-anchor="middle" font-family="Arial" font-size="8">Embed</text>
+    <text x="235" y="270" text-anchor="middle" font-family="Arial" font-size="8">[512d]</text>
+  </g>
+  
+  <!-- Plus sign -->
+  <text x="280" y="250" font-family="Arial" font-size="20" font-weight="bold">+</text>
+  
+  <!-- Positional Embeddings -->
+  <g id="pos-embeddings">
+    <rect x="300" y="220" width="60" height="60" fill="#aed6f1" stroke="#2980b9" stroke-width="1" rx="3"/>
+    <text x="330" y="235" text-anchor="middle" font-family="Arial" font-size="8">Pos</text>
+    <text x="330" y="250" text-anchor="middle" font-family="Arial" font-size="8">Embed</text>
+    <text x="330" y="265" text-anchor="middle" font-family="Arial" font-size="8">[0,1,2,3]</text>
+  </g>
+  
+  <!-- Arrow to transformer -->
+  <path d="M 380 250 L 420 250" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Transformer Stack -->
+  <g id="transformer-stack">
+    <!-- Layer 3 -->
+    <rect x="440" y="180" width="80" height="40" fill="#e74c3c" stroke="#c0392b" stroke-width="2" rx="5"/>
+    <text x="480" y="195" text-anchor="middle" font-family="Arial" font-size="9" fill="white">Transformer</text>
+    <text x="480" y="210" text-anchor="middle" font-family="Arial" font-size="9" fill="white">Layer N</text>
+    
+    <!-- Layer 2 -->
+    <rect x="440" y="230" width="80" height="40" fill="#e74c3c" stroke="#c0392b" stroke-width="2" rx="5"/>
+    <text x="480" y="245" text-anchor="middle" font-family="Arial" font-size="9" fill="white">Transformer</text>
+    <text x="480" y="260" text-anchor="middle" font-family="Arial" font-size="9" fill="white">Layer 2</text>
+    
+    <!-- Layer 1 -->
+    <rect x="440" y="280" width="80" height="40" fill="#e74c3c" stroke="#c0392b" stroke-width="2" rx="5"/>
+    <text x="480" y="295" text-anchor="middle" font-family="Arial" font-size="9" fill="white">Transformer</text>
+    <text x="480" y="310" text-anchor="middle" font-family="Arial" font-size="9" fill="white">Layer 1</text>
+    
+    <!-- Dots indicating more layers -->
+    <circle cx="480" cy="170" r="2" fill="#2c3e50"/>
+    <circle cx="480" cy="160" r="2" fill="#2c3e50"/>
+    <circle cx="480" cy="150" r="2" fill="#2c3e50"/>
+  </g>
+  
+  <!-- Arrow to output -->
+  <path d="M 540 250 L 580 250" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Hidden States -->
+  <rect x="600" y="220" width="60" height="60" fill="#e74c3c" stroke="#c0392b" stroke-width="1" rx="3"/>
+  <text x="630" y="240" text-anchor="middle" font-family="Arial" font-size="8" fill="white">Hidden</text>
+  <text x="630" y="255" text-anchor="middle" font-family="Arial" font-size="8" fill="white">States</text>
+  <text x="630" y="270" text-anchor="middle" font-family="Arial" font-size="8" fill="white">[512d]</text>
+  
+  <!-- Arrow to classification -->
+  <path d="M 680 250 L 720 250" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Classification Head -->
+  <rect x="720" y="200" width="60" height="100" fill="#f39c12" stroke="#e67e22" stroke-width="2" rx="5"/>
+  <text x="750" y="220" text-anchor="middle" font-family="Arial" font-size="9" fill="white">Language</text>
+  <text x="750" y="235" text-anchor="middle" font-family="Arial" font-size="9" fill="white">Model</text>
+  <text x="750" y="250" text-anchor="middle" font-family="Arial" font-size="9" fill="white">Head</text>
+  <text x="750" y="270" text-anchor="middle" font-family="Arial" font-size="8" fill="white">Linear</text>
+  <text x="750" y="285" text-anchor="middle" font-family="Arial" font-size="8" fill="white">+</text>
+  <text x="750" y="295" text-anchor="middle" font-family="Arial" font-size="8" fill="white">Softmax</text>
+  
+  <!-- Output probabilities -->
+  <g id="output">
+    <rect x="720" y="120" width="60" height="60" fill="#27ae60" stroke="#2ecc71" stroke-width="2" rx="5"/>
+    <text x="750" y="135" text-anchor="middle" font-family="Arial" font-size="8" fill="white">Next Word</text>
+    <text x="750" y="150" text-anchor="middle" font-family="Arial" font-size="8" fill="white">Probabilities</text>
+    <text x="750" y="165" text-anchor="middle" font-family="Arial" font-size="7" fill="white">"service": 0.45</text>
+    <text x="750" y="175" text-anchor="middle" font-family="Arial" font-size="7" fill="white">"support": 0.25</text>
+  </g>
+  
+  <!-- Arrow from classification to output -->
+  <path d="M 750 200 L 750 180" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Predicted word -->
+  <rect x="720" y="50" width="60" height="40" fill="#2ecc71" stroke="#27ae60" stroke-width="3" rx="5"/>
+  <text x="750" y="65" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="white">Predicted:</text>
+  <text x="750" y="80" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="white">"service"</text>
+  
+  <!-- Arrow to predicted word -->
+  <path d="M 750 120 L 750 90" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrows from input to embeddings -->
+  <path d="M 55 300 L 55 280" stroke="#2c3e50" stroke-width="1" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 115 300 L 115 280" stroke="#2c3e50" stroke-width="1" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 175 300 L 175 280" stroke="#2c3e50" stroke-width="1" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 235 300 L 235 280" stroke="#2c3e50" stroke-width="1" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrow from embeddings to positional -->
+  <path d="M 260 250 L 300 250" stroke="#2c3e50" stroke-width="1" fill="none"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#2c3e50">Transformer Architecture for Next Word Prediction</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+     refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50"/>
+    </marker>
+  </defs>
+  
+  <!-- Labels -->
+  <text x="145" y="210" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold">Token Embeddings</text>
+  <text x="330" y="210" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold">Positional Embeddings</text>
+  <text x="480" y="130" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold">Transformer Stack</text>
+  <text x="630" y="210" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold">Hidden States</text>
+</svg>
